@@ -1,0 +1,31 @@
+---
+layout: null
+permalink: /utopiagold-data/
+---
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="DATAta"></div>
+<p>hahahaha</p>
+<script>
+$(document).ready(function(){
+ $("p").click(function(){
+$.ajax({
+        url: '/utopiagold/control/proses_daftar.php',
+        data: "formData",
+        type: 'get',
+        success: function(data) {
+           $("#DATAta").html(data);
+        },
+        error: function() {
+            $('#DATAta').html('<strong>Error loading feed!</strong>');
+        }
+    });
+  });
+});
+</script>
+</body>
+</html>
