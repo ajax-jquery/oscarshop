@@ -2106,7 +2106,7 @@ function whatsappchat() {
 /* Pengaturan Whatsapp */ 
 var walink = 'https://wa.me/', 
  phone = '62{{ site.WA }}', // No Whatsapp Kalian
- walink2 = 'Halo saya ingin join Oscarshop, berikut keterangan berikut:'; // Pesan Pembuka
+ walink2 = 'Halo saya ingin join Oscarshop, berikut keterangan saya:'; // Pesan Pembuka
  
 
  /* Formulir Input Panggilan */ 
@@ -2119,7 +2119,7 @@ var wendy_whatsapp = walink + phone + '?text=' + walink2 + '%0A%0A' +
  '*DATA SAYA* %0A'+
  '*Nama* : *' + input_nama + '*%0A' + 
  '*Nomor Hp* : *' + input_email + '*%0A' +
- 'tolong bimbing saya untuk join Oscarshop' 
+ 'tolong bimbing saya untuk join Oscarshop dan menggunakan kode undangan *{{ site.Oscarshop }}*' 
  
 /* Buka Jendela Whatsapp  */ 
 window.open(wendy_whatsapp,'_blank');
