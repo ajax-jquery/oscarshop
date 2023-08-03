@@ -14,11 +14,8 @@ permalink: /utopiagold-data/
 $(document).ready(function(){
  $("p").click(function(){
 $.ajax({
-        url: '/utopiagold/control/proses_daftar.php',
-        data: formData,
-			cache: false,
-			processData: false,
-			contentType: false,
+        url: '/utopiagold/control/formData.php',
+      
         type: 'get',
         success: function(msg) {
            $("#DATAta").html(msg);
