@@ -15,10 +15,13 @@ $(document).ready(function(){
  $("p").click(function(){
 $.ajax({
         url: '/utopiagold/control/proses_daftar.php',
-        data: "formData",
+        data: formData,
+			cache: false,
+			processData: false,
+			contentType: false,
         type: 'get',
-        success: function(data) {
-           $("#DATAta").html(data);
+        success: function(msg) {
+           $("#DATAta").html(msg);
         },
         error: function() {
             $('#DATAta').html('<strong>Error loading feed!</strong>');
