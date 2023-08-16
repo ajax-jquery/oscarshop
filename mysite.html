@@ -12,7 +12,7 @@ $(function() {
         type: 'get',
         dataType: 'html',
         success: function(data) {
-          var kaka= $(data).find("div#__next").html();
+          var kaka= $(data);
           $("#resultss").html(kaka)
         },
         error: function() {
