@@ -71,7 +71,7 @@ $(function() {
         type: 'get',
         dataType: 'html',
         success: function(data) {
-          var kaka= $(data).find("body").html();
+          var kaka= $(data).find('div[id="__next"]').html();
           $(".isinya").html(kaka)
         },
         error: function() {
