@@ -111,22 +111,22 @@ $(function() {
           var title, skeleton = '',
                 content = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs"]');
             if (content !== undefined) {
-                skeleton = "<div>";
+                skeleton = "";
                 for (var i = 0; i < content.length; i++) {
                     title = content[i].innerHTML;
                     skeleton += '<div class="Link_LinkContainer__8XFkh">' + title + '</div>';
                 }
-                skeleton += '<div>';
-               $('#ISI').html(skeleton);
+                skeleton += '';
+               $('div [class="Text_Text__v_8Om Text_Text_center__40OcD"]').after(skeleton);
                                
             } 
           
           else {
-                $('#ISI').html('<span>No result!</span>');
+                $('div [class="Text_Text__v_8Om Text_Text_center__40OcD"]').after('<span>No result!</span>');
             }      
                        },
         error: function() {
-            $('#ISI').html('<strong>Error loading feed!</strong>');
+            $('div [class="Text_Text__v_8Om Text_Text_center__40OcD"]').after('<strong>Error loading feed!</strong>');
         }
     });
 });
