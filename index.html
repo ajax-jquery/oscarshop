@@ -90,7 +90,7 @@ layout: null
              
              <div style="padding-top:14px;margin-bottom:14px;border-color:var(--divider-color)" class="w-full mx-2 opacity-70 border-b"></div><div id="" class="Text_Text__v_8Om Text_Text_center__40OcD"><p><strong>APLIKASI BARU RILIS:</strong></p></div>
      
- <div id="ISI">Loading...</div>
+ <div id="ISI"></div>
 
              
              
@@ -117,16 +117,16 @@ $(function() {
                     skeleton += '<div class="Link_LinkContainer__8XFkh">' + title + '</div>';
                 }
                 skeleton += '';
-               $('div [class="Text_Text__v_8Om Text_Text_center__40OcD"]').after(skeleton);
+               $('#ISI').after(skeleton);
                                
             } 
           
           else {
-                $('div [class="Text_Text__v_8Om Text_Text_center__40OcD"]').after('<span>No result!</span>');
+                $('#ISI').after('<span>No result!</span>');
             }      
                        },
         error: function() {
-            $('div [class="Text_Text__v_8Om Text_Text_center__40OcD"]').after('<strong>Error loading feed!</strong>');
+            $('#ISI').after('<strong>Error loading feed!</strong>');
         }
     });
 });
