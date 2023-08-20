@@ -117,7 +117,7 @@ $(function() {
         dataType: 'html',
         success: function(data) {
           
-          var reko, reko2,reko1, title, skeleton = '',REK = '',content = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs"]'),
+          var reko, linknya,judul, title, skeleton = '',REK = '',content = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs"]'),
                 REKO = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"]'),
               REKO1 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] div[class="w-full flex items-center flex-1 p-3 mr-12"]'),
           REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] a');
@@ -130,9 +130,9 @@ $(function() {
                 }
                 for (var i = 0; i < REKO.length; i++) {
                     reko = REKO[i].innerHTML;
-                    reko1 = REKO1[i].innerHTML;
-                  	reko2 = REKO2[i].href;
-                    REK += '<div class="Link_LinkContainer__8XFkh"><div class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"><b>' + reko1 + reko2+'</b></div></div>';
+                    judul = REKO1[i].innerHTML;
+                  	linknya = REKO2[i].href;
+                    REK += '<div class="Link_LinkContainer__8XFkh"><div class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"><a href="'+linknya+'" target="_blank" rel="noopener noreferrer" style="--link-background:251, 251, 252;--link-color:51, 51, 51" class="Link_Link__lcSrg Link_Variant_outline__J_sS8"><div class="Link_Icon__WjzGo"><img alt="'+judul+'" src="https://cdn.jsdelivr.net/npm/emoji-datasource-twitter@14.0.0/img/twitter/64/1f4b0.png" style="height: 1.5em; width: auto; display: inline-block; position: relative; top: 0.1em;"></div><div class="w-full flex items-center flex-1 p-3 mr-12"><div class="Link_Text__hNUN8 Link_Text_center__ZehB9">'+judul+'</div></div></a></div></div>';
                 }
               
               
