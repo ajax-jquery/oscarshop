@@ -118,9 +118,9 @@ $(function() {
         success: function(data) {
           
           var reko, linknya,judul, title, skeleton = '',REK = '',content = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs"]'),
-                REKO = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"]'),
-              REKO1 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] div[class="w-full flex items-center flex-1 p-3 mr-12"]'),
-          REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] a');
+ REKO = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"]'),
+ REKO1 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] a div [class="Link_Text__hNUN8 Link_Text_center__ZehB9"]),
+REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] a');
             if (content !== undefined) {
                 skeleton = "";
                 REK = "";
