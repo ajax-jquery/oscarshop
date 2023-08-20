@@ -117,8 +117,10 @@ $(function() {
         dataType: 'html',
         success: function(data) {
           
-          var reko,  title, skeleton = '',REK = '',content = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs"]'),
-                REKO = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"]');
+          var reko, reko2,reko1, title, skeleton = '',REK = '',content = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs"]'),
+                REKO = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"]'),
+              REKO1 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] div[class="w-full flex items-center flex-1 p-3 mr-12"]'),
+          REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"] a');
             if (content !== undefined) {
                 skeleton = "";
                 REK = "";
@@ -128,7 +130,9 @@ $(function() {
                 }
                 for (var i = 0; i < REKO.length; i++) {
                     reko = REKO[i].innerHTML;
-                    REK += '<div class="Link_LinkContainer__8XFkh"><div class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"><b>' + reko + '</b></div></div>';
+                    reko1 = REKO1[i].innerHTML;
+                  	reko2 = REKO2[i].href;
+                    REK += '<div class="Link_LinkContainer__8XFkh"><div class="Link_LinkOuter__CacTs Link_Effect_shake__Bbl6A"><b>' + reko1 + reko2+'</b></div></div>';
                 }
               
               
