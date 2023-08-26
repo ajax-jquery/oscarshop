@@ -148,7 +148,12 @@ REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter_
                 skeleton += '';
                $('#ISI').after(skeleton);
               $('#REKOMENDASI').after(REK);
-              $("#sambutan").fadeOut("slow");                 
+               
+function myGreeting() {
+  $("#sambutan").fadeOut();
+};setTimeout(myGreeting, 3000);
+
+             
             } 
           
           else {
