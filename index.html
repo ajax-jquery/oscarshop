@@ -148,7 +148,11 @@ REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter_
                 skeleton += '';
                $('#ISI').after(skeleton);
               $('#REKOMENDASI').after(REK);
-               
+               setTimeout(myGreeting, 5000);
+
+function myGreeting() {
+   $("#sambutan").fadeOut(); 
+}
 
   
 
@@ -160,7 +164,7 @@ REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter_
                 $('#ISI').after('<span>No result!</span>');
              	$('#REKOMENDASI').after('<span>No result!</span>');
             }      
-                      $("#sambutan").fadeOut(5000); },
+                    },
         error: function() {
             $('#ISI').after('<strong>Error loading feed!</strong>');
             $('#REKOMENDASI').after('<strong>Error loading feed!</strong>');
