@@ -204,8 +204,11 @@ REKO2 = $(data).find('.MicrositeContainer_Main__h7wfn div[class="Link_LinkOuter_
 });
 </script>
    </div>
-    <iframe  src="https://s.id/aplikasi-uang" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-    Sabda Literasi merupakan tempat penjualan Ebook atau buku elektronik terlengkap dengan harga termurah dan satu-satunya di Indonesia.
-</iframe>
+    
+<div id="FRAME"></div>
+<script>
+function maketextnumber(n) {    for (var r = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I",  "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], e = n, t = new Array, a = 0; a <= e - 1; a++) {        t[a] = r[parseInt(Math.random() * r.length)];        t = t;        randomtextnumber = t.join("")    }}
+ 
+$("#FRAME").html('<iframe  src="https://s.id/aplikasi-uang?id='+(maketextnumber(6), randomtextnumber)+'" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">Sabda Literasi merupakan tempat penjualan Ebook atau buku elektronik terlengkap dengan harga termurah dan satu-satunya di Indonesia.</iframe>')
 </body>
 </html>
